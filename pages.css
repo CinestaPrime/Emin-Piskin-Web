@@ -5,3 +5,7 @@
 .head::after{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(90deg,#090a0b 0%,rgba(9,10,11,.96) 24%,rgba(9,10,11,.74) 43%,rgba(9,10,11,.25) 70%,rgba(9,10,11,.18) 100%),linear-gradient(0deg,#090a0b 0%,transparent 32%,rgba(9,10,11,.24) 100%)}
 .head .container{position:relative;z-index:1;width:min(1170px,90%)}
 @media(max-width:850px){.head{min-height:410px}.head::before{background-position:68% 30%}.head::after{background:linear-gradient(90deg,rgba(9,10,11,.94),rgba(9,10,11,.57) 65%,rgba(9,10,11,.32)),linear-gradient(0deg,#090a0b,transparent 42%)}}
+
+/* Center social icons exactly in the page footer, independent of side labels. */
+@media(min-width:851px){.foot{position:relative;min-height:104px}.foot .social{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);flex:none;justify-content:center;width:max-content;max-width:45%}}
+@media(max-width:850px){.foot .social{flex:none;width:100%;justify-content:center;margin:6px auto}}
