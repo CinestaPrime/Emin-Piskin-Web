@@ -9,3 +9,6 @@
 /* Center social icons exactly in the page footer, independent of side labels. */
 @media(min-width:851px){.foot{position:relative;min-height:104px}.foot .social{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);flex:none;justify-content:center;width:max-content;max-width:45%}}
 @media(max-width:850px){.foot .social{flex:none;width:100%;justify-content:center;margin:6px auto}}
+
+/* Company logos in ventures overview cards */
+.card .company-logo-frame{display:flex;align-items:center;justify-content:flex-start;width:100%;height:95px;margin:18px 0 6px;overflow:hidden}.card .company-logo-frame img{display:block;max-width:100%;max-height:95px;width:auto;height:auto;object-fit:contain;object-position:left center}.card:has(.company-logo-frame) h3{margin:24px 0 15px}.card:has(.company-logo-frame){min-height:310px}@media(max-width:850px){.card .company-logo-frame{height:78px}.card .company-logo-frame img{max-height:78px}}
