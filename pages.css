@@ -15,3 +15,38 @@
 
 /* CinestaAI card wordmark alignment */
 .card:has(img[src*="cinestaai-logo"]) .company-logo-frame{justify-content:center;height:112px}.card:has(img[src*="cinestaai-logo"]) .company-logo-frame img{max-height:106px;max-width:100%;object-position:center;transform:scale(1.12)}@media(max-width:850px){.card:has(img[src*="cinestaai-logo"]) .company-logo-frame{height:90px}.card:has(img[src*="cinestaai-logo"]) .company-logo-frame img{max-height:86px}}
+
+
+/* Responsive inner pages: spacing, navigation, logos, long links */
+html,body{max-width:100%;overflow-x:clip}
+img,svg{max-width:100%}
+@media(max-width:850px){
+.top{padding:18px 5vw;gap:17px}
+.top .nav{display:flex;align-items:center;flex-wrap:wrap;gap:10px 16px}
+.top .nav a{font-size:10px;line-height:1.8}
+.head{min-height:315px;padding:55px 0 50px}
+.head h1{font-size:clamp(43px,10.5vw,68px);line-height:1.02;overflow-wrap:anywhere}
+.lead{font-size:clamp(16px,4vw,20px)}
+.content{padding:48px 0}
+.split{gap:30px}
+.title{font-size:clamp(34px,8vw,54px)}
+.card{padding:24px;min-height:225px}
+.card h3{margin:18px 0 12px;font-size:clamp(23px,6vw,29px)}
+.card .company-logo-frame{height:78px}
+.fact{grid-template-columns:1fr;gap:9px}
+.fact a{overflow-wrap:anywhere}
+.foot{padding:27px 5vw;gap:20px}
+.foot .social{gap:10px;flex-wrap:wrap}
+}
+@media(max-width:480px){
+.top{gap:15px}
+.top .nav{column-gap:12px;row-gap:5px}
+.top .nav a{font-size:10px}
+.head{min-height:275px;padding:43px 0}
+.head h1{font-size:clamp(41px,10vw,55px);letter-spacing:-.06em}
+.prose p{font-size:15px;line-height:1.8}
+.card{padding:22px}
+.card:has(.company-logo-frame){min-height:240px}
+.card .company-logo-frame{margin:10px 0 2px}
+.social a{min-width:40px;height:40px}
+}
