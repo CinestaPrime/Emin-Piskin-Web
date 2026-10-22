@@ -12,3 +12,6 @@
 
 /* Company logos in ventures overview cards */
 .card .company-logo-frame{display:flex;align-items:center;justify-content:flex-start;width:100%;height:95px;margin:18px 0 6px;overflow:hidden}.card .company-logo-frame img{display:block;max-width:100%;max-height:95px;width:auto;height:auto;object-fit:contain;object-position:left center}.card:has(.company-logo-frame) h3{margin:24px 0 15px}.card:has(.company-logo-frame){min-height:310px}@media(max-width:850px){.card .company-logo-frame{height:78px}.card .company-logo-frame img{max-height:78px}}
+
+/* CinestaAI card wordmark alignment */
+.card:has(img[src*="cinestaai-logo"]) .company-logo-frame{justify-content:center;height:112px}.card:has(img[src*="cinestaai-logo"]) .company-logo-frame img{max-height:106px;max-width:100%;object-position:center;transform:scale(1.12)}@media(max-width:850px){.card:has(img[src*="cinestaai-logo"]) .company-logo-frame{height:90px}.card:has(img[src*="cinestaai-logo"]) .company-logo-frame img{max-height:86px}}
