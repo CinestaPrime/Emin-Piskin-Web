@@ -46,6 +46,50 @@
 /* Social profiles in homepage contact footer */
 .home-social{display:flex;justify-content:flex-end;align-items:center;gap:9px;flex-wrap:wrap;margin-top:20px}.home-social span{display:inline-flex;align-items:center;justify-content:center;min-width:38px;height:38px;padding:0 9px;border-radius:50px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.035);color:#ddd5cb;font:600 11px Manrope,sans-serif;line-height:1;transition:background .2s,border-color .2s}.home-social span:hover{background:rgba(182,156,121,.14);border-color:rgba(182,156,121,.6)}@media(max-width:850px){.home-social{justify-content:flex-start}}
 .home-social a{display:inline-flex;align-items:center;justify-content:center;min-width:38px;height:38px;padding:0 9px;border-radius:50px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.035);color:#ddd5cb;font:600 11px Manrope,sans-serif;text-decoration:none;transition:background .2s,border-color .2s}.home-social a:hover{background:rgba(182,156,121,.14);border-color:rgba(182,156,121,.6)}
+
+/* 2026 responsive phone/tablet refinement */
+html,body{max-width:100%;overflow-x:clip}
+@media(max-width:900px){
+.site-header{padding:18px 5vw;min-height:70px;align-items:center}
+.site-header .nav.open{left:5vw;right:5vw;top:68px;min-width:0;max-height:calc(100svh - 85px);overflow-y:auto;padding:22px;gap:19px;box-shadow:0 20px 60px rgba(0,0,0,.65)}
+.site-header .nav.open a{font-size:13px;padding:4px 0}
+.menu-btn{min-height:44px;min-width:44px;display:grid;place-items:center}
+.hero{height:auto;min-height:clamp(660px,100svh,900px)}
+.hero-content{width:calc(100% - 10vw);max-width:620px;margin-left:5vw;margin-right:5vw;padding:130px 0 110px}
+.hero-title{font-size:clamp(56px,11.7vw,112px);line-height:.99;letter-spacing:-.077em;overflow-wrap:normal}
+.hero-sub{max-width:440px}
+.hero .portrait-photo{object-position:68% center}
+section.content{padding:85px 5vw}
+.venture{grid-template-columns:32px minmax(0,1fr) 26px;gap:12px;padding:25px 0}
+.venture .venture-brand{min-width:0;max-width:100%;gap:10px}
+.venture .venture-brand h3{font-size:clamp(20px,4.1vw,30px);overflow-wrap:anywhere}
+.venture p{margin:0;min-width:0}
+.venture .arrow{justify-self:end}
+.footer{padding:80px 5vw 26px}.footer-title{font-size:clamp(45px,10vw,82px)}
+.footer-bottom{flex-wrap:wrap;line-height:1.7}
+}
+@media(max-width:520px){
+.hero{min-height:690px;min-height:100svh}
+.hero-content{padding-top:110px;padding-bottom:100px}
+.hero-title{font-size:clamp(51px,12.5vw,70px);margin:23px 0 16px}
+.hero .portrait-photo{object-position:66% center;filter:grayscale(1) brightness(.68)}
+.hero:after{background:linear-gradient(90deg,rgba(9,10,11,.85),rgba(9,10,11,.26) 85%),linear-gradient(0deg,#090a0b 2%,transparent 40%)}
+.eyebrow{letter-spacing:.19em;line-height:1.7;gap:10px}.eyebrow:before{width:19px;flex-shrink:0}
+.hero-sub{max-width:320px;line-height:1.75}
+.hero-actions{gap:18px;align-items:center}
+.section-head{font-size:clamp(36px,10vw,48px)}
+.chapter{padding:70px 5vw}.moment{padding-top:24px;padding-bottom:24px}
+.ventures-top{margin-bottom:33px}
+.venture{grid-template-columns:23px minmax(0,1fr) 20px;gap:9px}
+.venture .venture-brand-mark{flex-basis:47px;width:47px;height:41px}
+.venture .venture-brand-ai .venture-brand-mark{flex-basis:65px;width:65px;height:38px}
+.venture .venture-brand h3{font-size:clamp(18px,5.2vw,24px)}
+.venture p{font-size:12px;line-height:1.6}
+.footer-title{font-size:clamp(43px,11vw,63px)}
+.footer-side{margin-top:28px}
+.home-social{justify-content:flex-start;gap:8px}
+.footer-bottom{margin-top:55px;font-size:10px;overflow-wrap:anywhere}
+}
 </style>
 <style>.site-header{justify-content:space-between}.site-header .nav{margin-left:auto}.site-header .header-center{display:none}@media(max-width:900px){.site-header .nav.open{display:flex}}</style><style>.hero .portrait-photo{display:block!important}.hero .portrait svg{display:none!important}.hero .portrait{opacity:1!important}.hero .portrait-photo{object-fit:cover;object-position:70% 35%;filter:grayscale(1) contrast(1.08) brightness(.82)}.hero .portrait:after{background:linear-gradient(90deg,#090a0b 0%,rgba(9,10,11,.88) 25%,rgba(9,10,11,.4) 54%,transparent 83%),linear-gradient(0deg,#090a0b,transparent 30%)}@media(max-width:850px){.hero .portrait-photo{object-position:68% center}}</style></head>
 <body>
